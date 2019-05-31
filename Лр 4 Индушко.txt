@@ -1,0 +1,47 @@
+ЛР 4 Индушко
+Задание 1
+package com.company;
+
+public class Main {
+
+
+
+            public static void main(String[] args)
+            {
+                StringBuffer text = new StringBuffer("Hello,how are you,have we ever met before?");
+                String stroka="WordInsert ";
+                System.out.println(text);
+                int i=0, j=0;
+                while ((j= text.indexOf("ed ", i)) != -1)
+                {
+                    j+= 3;
+                    text.insert(j, stroka);
+                    i = j;
+                }
+
+                System.out.println("\n" + text);
+            }
+
+
+
+    }
+Задание 2
+package com.company;
+
+public class ZadB {
+
+    public static void main(String[] args) {
+
+        String str = "Yes,i have seen you a long time ago";
+        String[] sc = str.split("[\\!|\\.|\\?]\\s?");
+        String[] sc1 = new String[sentence.length];
+
+        for (int i = 0; i < sc.length; i++){
+            sc1[i] = sc[i].trim().replaceAll("(?U)^(\\w+)(.*)(\\b\\w+)([.?!]?$)", );
+        }
+
+        for (String s : sc1){
+            System.out.println(s);
+        }
+    }
+}
